@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your webpage">
+    <meta name="keywords" content="keywords, associated, with, your, content">
+    <title>@ViewBag.Title - TianJin</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/css/light.css">
+</head>
+<body>
+    <div class="search-container ">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="filter-container ">
+        <select id="filter-select">
+            <option value="all">All</option>
+            <option value="category1">text</option>
+            <option value="category2">picture</option>
+        </select>
+        <button id="filter-button">Filter</button>
+    </div>
+    <div class="sort-container ">
+        <select id="price-sort">
+            <option value="asc">Price: Low to High</option>
+            <option value="desc">Price: High to Low</option>
+        </select>
+        <button id="sort-button">Sort</button>
+    </div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("TianJin", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("CityInfo", "Index", "CityInfo")</li>
+                        <li>@Html.ActionLink("HistoryCulture", "Index", "HistoryCultures")</li>
+                        <li>@Html.ActionLink("SpecialtyFood", "Index", "SpecialtyFoods")</li>
+                        <li>@Html.ActionLink("TouristAttraction", "Index", "TouristAttractions")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content searchable-item">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - TianJin</p>
+            </footer>
+        </div>
+        <div class="custom-container ">
+            <h1 class="custom-heading searchable-item">Welcome to TianJin</h1>
+            <p class="custom-paragraph searchable-item">Explore the content of this website.</p>
+
+            <p>
+                <a href="https://validator.w3.org/nu/" target="_blank">HTML5 Validator</a>
+                <br>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS3 Validator</a>
+            </p>
+            <p>Contact us at <a href="mailto:your-email@example.com">2968389634@qq.com</a></p>
+        </div>
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        <script src="~/js/site.js"></script>
+</body>
+</html>

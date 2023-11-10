@@ -1,0 +1,146 @@
+﻿body {
+    margin: 20px;
+}
+
+.navbar ul.nav.navbar-nav li {
+    margin-right: 100px; 
+}
+
+
+.navbar ul.nav.navbar-nav {
+    margin-bottom: 10px; 
+}
+.navbar.navbar-inverse {
+    background-color: transparent;
+    border: none;   
+}
+
+
+.navbar .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.navbar ul.nav.navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+    display: inline;
+}
+
+
+.navbar .navbar-collapse {
+    border: none;
+}
+.navbar.navbar-inverse {
+    background-color: firebrick; 
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar.navbar-inverse {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    font-size: 18px; 
+}
+
+.custom-container {
+    background-color: #3498db; 
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+button {
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    button:hover {
+        background-color: #2670b5; 
+    }
+
+
+/* 导航栏底部右上角位置 */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-container,
+.filter-container,
+.sort-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    margin-right: 20px; 
+    margin-top: 15px; 
+}
+
+
+    .search-container input[type="text"],
+    .search-container button,
+    .filter-container select,
+    .filter-container button,
+    .sort-container button {
+        font-size: 13px; 
+        padding: 3px 5px; 
+      
+    }
+.navbar-brand {
+    font-size: 30px; 
+}
+
+body {
+    background-image: url(/Images/backgroun1.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center center; 
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.container.body-content {
+    background-color: rgb(253, 206, 206); 
+}
+
+
+
+
+
+
+
+
+

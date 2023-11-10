@@ -1,0 +1,21 @@
+﻿
+
+.container4 {
+    padding: 15px; 
+    text-align: center; 
+}
+
+    .container4 p {
+        font-size: 18px; 
+        margin: 10px 0; 
+    }
+
+      
+        .container4 p:first-child {
+            margin-top: 0;
+        }
+
+  
+    .container4 p {
+        white-space: pre-wrap;
+    }

@@ -1,0 +1,21 @@
+﻿
+
+.container5 {
+    padding: 15px; 
+    text-align: center; 
+}
+
+    .container5 p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    
+        .container5 p:first-child {
+            margin-top: 0;
+        }
+
+    
+    .container5 p {
+        white-space: pre-wrap;
+    }
